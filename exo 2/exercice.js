@@ -1,16 +1,14 @@
 let catPic = document.getElementById("cat-pic");
+
 let onCatClick = function(e) {
-    var stashePic = document.getElementById("mustache-pic");
-    stashePic.style.top = "100px";
-    stashePic.style.left = "100px";
+    let stashePic = document.getElementById("mustache-pic");
+    let x = e.clientX;
+    let y = e.clientY;
+    console.log(x);
+    console.log(y);
+    stashePic.style.top = y - 20 + "px";
+    stashePic.style.left = x - 50 + "px";
 };
 
 catPic.addEventListener("click", onCatClick);
-
-
-
-
-
-
-
 
