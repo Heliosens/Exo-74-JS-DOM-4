@@ -1,5 +1,5 @@
 let libButton = document.getElementById('lib-button');
-console.log(libButton);
+
 let libIt = function() {
     let noun = document.getElementById('noun').value;
     let adj = document.getElementById('adjective').value;
